@@ -18,7 +18,7 @@ fi
 cp -rn ./resources/fonts "$WORKBENCH_PATH/"
 
 # Prepend fonts.css to workbench.web.api.css
-if ! grep -q FiraMonoForPowerline "$WORKBENCH_CSS_PATH"; then
+if ! grep -q FiraCode "$WORKBENCH_CSS_PATH"; then
   echo "$(cat ./resources/fonts.css)\n$(cat $WORKBENCH_CSS_PATH)" > $WORKBENCH_CSS_PATH
 fi
 
